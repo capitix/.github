@@ -1,26 +1,30 @@
 # Contributing
 
+## Repositories
+
+Each service has its own repository (ADR-024) and may use any language and data store (ADR-023, ADR-006). Services interoperate only through published contracts; never through another service's code or data store.
+
 ## Branches
 
-- `main` is the only long-lived branch and is protected.
-- Work on short-lived branches named `<type>/<scope>-<topic>`, for example `feat/ap-payment-holds`, `fix/party-merge-event`, `docs/adr-022`, `chore/ci-cache`.
+- `main` is the only long-lived branch.
+- Work on short-lived branches named `<type>/<topic>`, for example `feat/payment-holds`, `fix/merge-event`, `docs/adr-025`.
 - Open a pull request into `main`. Pull requests are squash-merged.
 
 ## Commit messages
 
-Use [Conventional Commits](https://www.conventionalcommits.org/) with the module identifier as scope:
+Use [Conventional Commits](https://www.conventionalcommits.org/), with an optional area scope:
 
 ```
-feat(ap): add payment holds
-fix(party): emit party.merged on duplicate merge
-docs(architecture): record ADR-022
+feat(api): add payment holds
+fix(feed): stamp sequence after commit
+docs(adr): record ADR-025
 ```
 
-Types: `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`. Mark breaking changes with `!` or a `BREAKING CHANGE:` footer.
+Types: `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`. Mark breaking changes with `!` or a `BREAKING CHANGE:` footer. Commits, pull requests, and documentation carry no AI attribution.
 
 ## Releases
 
-Modules, services, and kit packages are versioned independently and tagged as `<id>/vX.Y.Z` (for example `ap/v1.4.0`, `kit/outbox-relay/v1.0.0`). Localization packs are tagged `<owner>.<JURISDICTION>/<version>`.
+Each repository is versioned independently and tagged `vX.Y.Z`. Localization packs are tagged `<owner>.<JURISDICTION>/<version>`.
 
 ## Architecture changes
 
