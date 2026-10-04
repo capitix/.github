@@ -10,4 +10,4 @@ A modular business platform: independently useful finance, supply chain, commerc
 | [kit-rust](https://github.com/capitix/kit-rust) | Optional Rust reference implementations |
 | [localization](https://github.com/capitix/localization) | Localization packs and jurisdiction profiles |
 | [infrastructure](https://github.com/capitix/infrastructure) | Infrastructure as code |
-| One repository per service | For example `gl`, created as each service's design begins |
+| One repository per service | For example `general-ledger`, created as each service's design begins |
