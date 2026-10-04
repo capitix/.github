@@ -9,5 +9,6 @@ A modular business platform: independently useful finance, supply chain, commerc
 | [conformance](https://github.com/capitix/conformance) | Black-box conformance suite every service passes |
 | [kit-rust](https://github.com/capitix/kit-rust) | Optional Rust reference implementations |
 | [localization](https://github.com/capitix/localization) | Localization packs and jurisdiction profiles |
-| [infrastructure](https://github.com/capitix/infrastructure) | Infrastructure as code |
+| [distribution](https://github.com/capitix/distribution) | Installation bundles and packaging per deployment profile |
+| [infrastructure](https://github.com/capitix/infrastructure) | Infrastructure as code for vendor operations |
 | One repository per service | For example `general-ledger`, created as each service's design begins |
